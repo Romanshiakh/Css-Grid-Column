@@ -1,0 +1,80 @@
+body {
+    background-color: #2E2E2E;
+    margin-top: 10rem;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    text-decoration: underline;
+
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+}
+
+.container>div {
+    background-color: crimson;
+    padding: 16px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    border: 1px solid #000;
+
+}
+
+/* The grid-column-start and grid-column-end Properties */
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+/* The grid-column Property */
+.item3 {
+    grid-column: 1/span 3;
+}
+
+
+.space {
+    margin-bottom: 4rem;
+}
+
+
+
+/* Set a fixed size for column 1,
+2,
+and 4,
+and keep column 3 as auto size: */
+.container2 {
+    display: grid;
+    grid-template-columns: 80px 50px auto 40px;
+    grid-template-rows: 60px 200px;
+
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+
+
+}
+
+
+.grid_div {
+    background-color: dodgerblue;
+    padding: 16px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 1px solid #000;
+
+}
